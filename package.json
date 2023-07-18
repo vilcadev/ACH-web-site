@@ -2,13 +2,17 @@
   "name": "hoobank",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://vilcadev.github.io/react-example",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
